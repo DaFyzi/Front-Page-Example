@@ -1,0 +1,125 @@
+html {
+	background-image: url("../img/Background.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	align-items: flex-start;
+	font-family: 'Roboto', sans-serif;
+	z-index:-2;
+}
+
+#container {
+	left: 25%; 
+    top: 25%; 
+    position: absolute; 
+	width: 920px;
+	height: 420px;
+	background-color: #10192F;
+	opacity:.9;
+}
+
+#cont2 {
+	left: 25%; 
+    top: 25%; 
+    position: absolute; 
+	width: 920px;
+	height: 420px;
+}
+
+.content {
+	margin: 75px 0 0 0;
+}
+
+.SignUp {
+	float: left;
+	margin-left: 90px;
+	width: 275px;
+	color: white;
+	opacity: 1;
+	z-index: 0;
+}
+
+.LogIn {
+	float: left;
+	margin-left: 140px;
+	margin-top: 30px;
+	width: 300px;
+	color: white;
+	opacity: 1;
+	z-index: 0;
+}
+
+
+.ActiveL {
+	float: left;
+	width: 464px;
+	height: 464px;
+	opacity: 1;
+	background-color: white;
+	margin-left: 440px;
+	margin-top: -21px;
+	position: absolute;
+	z-index: 1;
+
+}
+
+.Login_A {
+	margin-left: 80px;
+	margin-top: 51px;
+	color: white;
+	z-index: 0;
+}
+
+#logo1 {
+	float:right;
+	margin:75px 105px 0 0 ;
+}
+
+.ActiveS {	display:none;
+	opacity:100%;
+	float: left;
+	width: 464px;
+	height: 464px;
+	background-color: white;
+	margin-left: 20px;
+	margin-top: -21px;
+	position: absolute;
+	z-index: 1;
+}
+
+.SignUp_A {
+	margin-left:80px;
+	color: white;
+	z-index: 0;
+}
+
+#logo2 {
+	float:right;
+	margin:70px 105px 0 0 ;
+}
+
+.in
+{
+    background: transparent;
+    border: none;
+    z-index:15;
+}
+
+input p{
+	z-index:32;
+}
+#inactive
+{  
+     position: absolute; 
+     z-index:-3;
+}
+
+#icon {
+	
+	float: right;
+	margin-right: -94px;
+}
+
+footer{
+	text-align: center;
+	margin-top: 45%;
+}

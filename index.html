@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login || Sign Up</title>
+<link rel="stylesheet" type="text/css" href="Style/Style.css" />
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<div id="container">
+</div>
+<div id="cont2">
+	<div class="SignUp">
+		<p class="content" style="font-size:125%;">Don't have an account?</p>
+		<br><img src="img/line_under.png"/><br>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<input id="sua" type="image" src="img/btn0.png" onMouseOver="this.src='img/btn0_hover.png'" onMouseOut="this.src='img/btn0.png'">
+			<p style="margin:-40px 0 0 40px;">SIGN UP</p>
+		</input>
+	</div>
+
+	<div class="LogIn">
+		<p class="content" style="font-size:125%;">Have an account?</p>
+		<br><img src="img/line_under.png"/><br>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		<br>
+		<input id="lia" type="image" src="img/btn0.png" onMouseOver="this.src='img/btn0_hover.png'" onMouseOut="this.src='img/btn0.png'" text="LOGIN">
+			<p style="margin:-40px 0 0 40px;">LOGIN</p>
+		</input>
+	</div>
+
+	<div class="ActiveL">
+		<img src="img/Magebit.png" id="logo1">
+		<div class="Login_A">
+			<p class="content" style="font-size:125%; color:black;">Login</p>
+			<br><img src="img/line_under.png"/><br>
+			<form>
+				<p style="color:#8899BB;">Email<star style="color:red;">*</star>
+					<img src="img/ic_mail.png" style="margin-left:215px;"></p>
+					
+					<input class="in" type="text" name="Email">
+						<img src="img/underline.png" style="z-index:-3; float:left;">
+
+				<p style="color:#8899BB;">Password<star style="color:red;">*</star>
+					<img src="img/ic_lock.png" style="margin-left:185px;"></p>
+					
+					<input class="in" type="password" name="Password">
+						<img src="img/underline.png" style="z-index:-3; float:left;">
+
+					<br><br> 	
+				<input id="inactive" type="image" src="img/btn1.png" onMouseOver="this.src='img/btn1_hover.png'" onMouseOut="this.src='img/btn1.png'">
+					<b style="float:left; margin:15px 0 0 40px; z-index:1;">LOGIN</b>
+				</input>
+
+				<a style="float:right; margin-right:100px;" href="forgot"><p style="color:#8899BB;">Forgot?</p></a>
+
+			</form>
+		</div>
+	</div>
+
+	<div class="ActiveS">
+		<img src="img/Magebit.png" id="logo2">
+		<div class="SignUp_A">
+			<p class="content" style="font-size:125%; color:black;">Sign Up</p>
+			<br><img src="img/line_under.png"/><br>
+			<form>
+				<p style="color:#8899BB;">Name<star style="color:red;">*</star>
+					<img src="img/ic_user.png" style="margin-left:210px;"></p>
+					
+					<input class="in" type="text" name="Name">
+						<img src="img/underline.png" style="z-index:-3; float:left;">
+
+				<p style="color:#8899BB;">Email<star style="color:red;">*</star>
+					<img src="img/ic_mail.png" style="margin-left:215px;"></p>
+					
+					<input class="in" type="text" name="Email">
+						<img src="img/underline.png" style="z-index:-3; float:left;">
+
+				<p style="color:#8899BB;">Password<star style="color:red;">*</star>
+					<img src="img/ic_lock.png" style="margin-left:185px;"></p>
+					
+					<input class="in" type="password" name="Password">
+						<img src="img/underline.png" style="z-index:-3; float:left;">
+
+				<br><br>
+				<input id="inactive" type="image" src="img/btn1.png" onMouseOver="this.src='img/btn1_hover.png'" onMouseOut="this.src='img/btn1.png'">
+					<b style="float:left; margin:15px 0 0 40px; z-index:1;"">SIGN UP</b>
+				</input>
+
+				
+
+			</form>
+		</div>
+	</div>
+</div>
+<footer>
+	<b style="font-size:90%; color:#8899BB;">ALL RIGHTS RESERVED “MAGEBIT” 2016</b>
+</footer>
+</body>
+</html>
+<script type="text/javascript">
+	(function(){
+    var $plugin = jQuery.sub();
+    $plugin.fn.animate = function(props, speed, cb){
+        if(typeof(speed) == "function")
+            cb = speed, speed = 500;
+        if(typeof(cb) != "function")
+            cb = function(){};
+        return $.each(this, function(i, el){
+            el = $(el);
+            if(props.float && props.float != el.css("float")){
+                var elem = el.clone().css(props).insertBefore(el),
+                    temp = (props.float == el.css("float")) ? elem.position().left : el.position().left;
+                props.marginLeft = elem.position().left;
+                elem.remove();
+                el.css({float:"left",marginLeft:temp});
+            }
+            $(this).animate(props, speed, function(){
+                $(this).css(props);
+                cb();
+            });
+        });
+    };
+    
+    $(".float.right").bind("click", function(){
+        $plugin(this).animate({float:"right"}, 1000); 
+    });
+    
+    $(".float.left").bind("click", function(){
+        $plugin(this).animate({float:"left"}, 1000); 
+    });
+
+})();
+	
+</script>
